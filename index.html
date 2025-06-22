@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Platzwahl – mit Sichtbarer Sperre</title>
+  <title>Platzwahl – Vollversion mit Reservierungen</title>
   <style>
-    body { text-align: center; font-family: sans-serif; }
+    body { font-family: sans-serif; text-align: center; }
     #container { position: relative; display: inline-block; }
     img { max-width: 100%; height: auto; }
     .overlay {
@@ -56,7 +56,7 @@
         const belegte = new Set();
 
         json.table.rows.forEach(row => {
-          const platz = row.c.find(c => c && c.v && /[A-N]\d{1,2}/i.test(c.v));
+          const platz = row.c.find(c => c && c.v && /[A-N]\d{1,2}/.test(c.v));
           if (platz) belegte.add(platz.v.trim().toUpperCase());
         });
 
