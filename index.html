@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Platzwahl – Vollversion mit Reservierungen</title>
+  <meta charset="UTF-8">
+  <title>Platzwahl – mit Live-Gelb-Overlay</title>
   <style>
     body { font-family: sans-serif; text-align: center; }
     #container { position: relative; display: inline-block; }
@@ -44,7 +45,6 @@
       "G20": [302,163],
 
     };
-
     const formBase = "https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=";
     const sheetURL = "https://docs.google.com/spreadsheets/d/1e3mZuY5i76l5_eEpKmcxjzvEKiCWoeC04WXS_evXgJA/gviz/tq?tqx=out:json";
 
@@ -74,7 +74,6 @@
             el.href = formBase + platz;
           } else {
             el.setAttribute("disabled", "true");
-
             const overlay = document.createElement("div");
             overlay.className = "overlay";
             overlay.style.left = (x - 10) + "px";
