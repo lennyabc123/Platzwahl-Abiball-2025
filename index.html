@@ -1,121 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Platzwahl exakt</title>
+    <title>Koordinaten-Erfassung</title>
     <style>
         body { text-align: center; font-family: sans-serif; }
         img { max-width: 100%; height: auto; }
+        #output { margin-top: 20px; font-size: 18px; }
     </style>
 </head>
 <body>
-    <h2>Interaktiver Sitzplan (präzise)</h2>
-    <img src="lageplan.png" usemap="#platzwahl">
-    <map name="platzwahl">
-        <area shape="circle" coords="14,15,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A1" alt="A1" title="A1">
-        <area shape="circle" coords="55,17,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A4" alt="A4" title="A4">
-        <area shape="circle" coords="95,11,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A5" alt="A5" title="A5">
-        <area shape="circle" coords="109,15,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A6" alt="A6" title="A6">
-        <area shape="circle" coords="123,15,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A7" alt="A7" title="A7">
-        <area shape="circle" coords="123,15,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A12" alt="A12" title="A12">
-        <area shape="circle" coords="212,12,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A13" alt="A13" title="A13">
-        <area shape="circle" coords="300,12,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=A20" alt="A20" title="A20">
-        <area shape="circle" coords="14,55,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B1" alt="B1" title="B1">
-        <area shape="circle" coords="55,57,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B4" alt="B4" title="B4">
-        <area shape="circle" coords="95,51,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B5" alt="B5" title="B5">
-        <area shape="circle" coords="109,55,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B6" alt="B6" title="B6">
-        <area shape="circle" coords="123,55,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B7" alt="B7" title="B7">
-        <area shape="circle" coords="123,55,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B12" alt="B12" title="B12">
-        <area shape="circle" coords="212,52,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B13" alt="B13" title="B13">
-        <area shape="circle" coords="300,52,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=B20" alt="B20" title="B20">
-        <area shape="circle" coords="14,95,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C1" alt="C1" title="C1">
-        <area shape="circle" coords="55,97,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C4" alt="C4" title="C4">
-        <area shape="circle" coords="95,91,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C5" alt="C5" title="C5">
-        <area shape="circle" coords="109,95,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C6" alt="C6" title="C6">
-        <area shape="circle" coords="123,95,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C7" alt="C7" title="C7">
-        <area shape="circle" coords="123,95,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C12" alt="C12" title="C12">
-        <area shape="circle" coords="212,92,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C13" alt="C13" title="C13">
-        <area shape="circle" coords="300,92,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=C20" alt="C20" title="C20">
-        <area shape="circle" coords="14,135,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D1" alt="D1" title="D1">
-        <area shape="circle" coords="55,137,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D4" alt="D4" title="D4">
-        <area shape="circle" coords="95,131,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D5" alt="D5" title="D5">
-        <area shape="circle" coords="109,135,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D6" alt="D6" title="D6">
-        <area shape="circle" coords="123,135,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D7" alt="D7" title="D7">
-        <area shape="circle" coords="123,135,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D12" alt="D12" title="D12">
-        <area shape="circle" coords="212,132,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D13" alt="D13" title="D13">
-        <area shape="circle" coords="300,132,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=D20" alt="D20" title="D20">
-        <area shape="circle" coords="14,175,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E1" alt="E1" title="E1">
-        <area shape="circle" coords="55,177,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E4" alt="E4" title="E4">
-        <area shape="circle" coords="95,171,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E5" alt="E5" title="E5">
-        <area shape="circle" coords="109,175,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E6" alt="E6" title="E6">
-        <area shape="circle" coords="123,175,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E7" alt="E7" title="E7">
-        <area shape="circle" coords="123,175,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E12" alt="E12" title="E12">
-        <area shape="circle" coords="212,172,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E13" alt="E13" title="E13">
-        <area shape="circle" coords="300,172,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=E20" alt="E20" title="E20">
-        <area shape="circle" coords="14,215,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F1" alt="F1" title="F1">
-        <area shape="circle" coords="55,217,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F4" alt="F4" title="F4">
-        <area shape="circle" coords="95,211,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F5" alt="F5" title="F5">
-        <area shape="circle" coords="109,215,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F6" alt="F6" title="F6">
-        <area shape="circle" coords="123,215,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F7" alt="F7" title="F7">
-        <area shape="circle" coords="123,215,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F12" alt="F12" title="F12">
-        <area shape="circle" coords="212,212,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F13" alt="F13" title="F13">
-        <area shape="circle" coords="300,212,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=F20" alt="F20" title="F20">
-        <area shape="circle" coords="14,255,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G1" alt="G1" title="G1">
-        <area shape="circle" coords="55,257,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G4" alt="G4" title="G4">
-        <area shape="circle" coords="95,251,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G5" alt="G5" title="G5">
-        <area shape="circle" coords="109,255,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G6" alt="G6" title="G6">
-        <area shape="circle" coords="123,255,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G7" alt="G7" title="G7">
-        <area shape="circle" coords="123,255,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G12" alt="G12" title="G12">
-        <area shape="circle" coords="212,252,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G13" alt="G13" title="G13">
-        <area shape="circle" coords="300,252,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=G20" alt="G20" title="G20">
-        <area shape="circle" coords="14,295,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H1" alt="H1" title="H1">
-        <area shape="circle" coords="55,297,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H4" alt="H4" title="H4">
-        <area shape="circle" coords="95,291,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H5" alt="H5" title="H5">
-        <area shape="circle" coords="109,295,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H6" alt="H6" title="H6">
-        <area shape="circle" coords="123,295,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H7" alt="H7" title="H7">
-        <area shape="circle" coords="123,295,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H12" alt="H12" title="H12">
-        <area shape="circle" coords="212,292,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H13" alt="H13" title="H13">
-        <area shape="circle" coords="300,292,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=H20" alt="H20" title="H20">
-        <area shape="circle" coords="14,335,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I1" alt="I1" title="I1">
-        <area shape="circle" coords="55,337,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I4" alt="I4" title="I4">
-        <area shape="circle" coords="95,331,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I5" alt="I5" title="I5">
-        <area shape="circle" coords="109,335,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I6" alt="I6" title="I6">
-        <area shape="circle" coords="123,335,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I7" alt="I7" title="I7">
-        <area shape="circle" coords="123,335,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I12" alt="I12" title="I12">
-        <area shape="circle" coords="212,332,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I13" alt="I13" title="I13">
-        <area shape="circle" coords="300,332,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=I20" alt="I20" title="I20">
-        <area shape="circle" coords="14,375,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J1" alt="J1" title="J1">
-        <area shape="circle" coords="55,377,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J4" alt="J4" title="J4">
-        <area shape="circle" coords="95,371,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J5" alt="J5" title="J5">
-        <area shape="circle" coords="109,375,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J6" alt="J6" title="J6">
-        <area shape="circle" coords="123,375,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J7" alt="J7" title="J7">
-        <area shape="circle" coords="123,375,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J12" alt="J12" title="J12">
-        <area shape="circle" coords="212,372,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J13" alt="J13" title="J13">
-        <area shape="circle" coords="300,372,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=J20" alt="J20" title="J20">
-        <area shape="circle" coords="95,411,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=K5" alt="K5" title="K5">
-        <area shape="circle" coords="109,415,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=K6" alt="K6" title="K6">
-        <area shape="circle" coords="123,415,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=K7" alt="K7" title="K7">
-        <area shape="circle" coords="123,415,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=K12" alt="K12" title="K12">
-        <area shape="circle" coords="212,412,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=K13" alt="K13" title="K13">
-        <area shape="circle" coords="300,412,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=K20" alt="K20" title="K20">
-        <area shape="circle" coords="95,451,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=L5" alt="L5" title="L5">
-        <area shape="circle" coords="109,455,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=L6" alt="L6" title="L6">
-        <area shape="circle" coords="123,455,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=L7" alt="L7" title="L7">
-        <area shape="circle" coords="123,455,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=L12" alt="L12" title="L12">
-        <area shape="circle" coords="212,452,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=L13" alt="L13" title="L13">
-        <area shape="circle" coords="300,452,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=L20" alt="L20" title="L20">
-        <area shape="circle" coords="95,491,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=M5" alt="M5" title="M5">
-        <area shape="circle" coords="109,495,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=M6" alt="M6" title="M6">
-        <area shape="circle" coords="123,495,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=M7" alt="M7" title="M7">
-        <area shape="circle" coords="123,495,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=M12" alt="M12" title="M12">
-        <area shape="circle" coords="212,492,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=M13" alt="M13" title="M13">
-        <area shape="circle" coords="300,492,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=M20" alt="M20" title="M20">
-        <area shape="circle" coords="95,531,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=N5" alt="N5" title="N5">
-        <area shape="circle" coords="109,535,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=N6" alt="N6" title="N6">
-        <area shape="circle" coords="123,535,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=N7" alt="N7" title="N7">
-        <area shape="circle" coords="123,535,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=N12" alt="N12" title="N12">
-        <area shape="circle" coords="212,532,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=N13" alt="N13" title="N13">
-        <area shape="circle" coords="300,532,10" href="https://docs.google.com/forms/d/e/1FAIpQLSfu-S2ZbrXsKnf60TermgBwNptGxLXNeCBMWdtgZsAAeNU7Hw/viewform?usp=pp_url&entry.838353268=N20" alt="N20" title="N20">
-    </map>
-    <p>Klicke auf deinen Sitzplatz, um ihn zu reservieren.</p>
+    <h2>Klicke auf den Lageplan und notiere dir die Koordinaten</h2>
+    <img id="lageplan" src="lageplan.png" style="max-width:100%;" />
+    <div id="output">Koordinaten erscheinen hier...</div>
+
+    <script>
+        const img = document.getElementById('lageplan');
+        const output = document.getElementById('output');
+
+        img.addEventListener('click', function(e) {
+            const rect = img.getBoundingClientRect();
+            const x = Math.round(e.clientX - rect.left);
+            const y = Math.round(e.clientY - rect.top);
+            output.innerText = `X: $300, Y: $12`;
+            console.log(`X: $300, Y: $12`);
+        });
+    </script>
 </body>
 </html>
